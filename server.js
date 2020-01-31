@@ -11,12 +11,14 @@ app.set('view engine', 'hbs')
 app.get('/', (req, res) => {
     res.render('home', {
         nombre: 'Daniel',
+        titulo: 'Home'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         nombre: 'Daniel',
+        titulo: 'About'
     })
 })
 app.listen(port, () => console.log(`Servidor: Activo - Puerto: ${port}`))
