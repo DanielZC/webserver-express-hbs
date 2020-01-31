@@ -15,6 +15,13 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/contact', (req, res) => {
+  res.render('contact',{
+    nombre: 'daniel',
+    titulo: 'Contact'
+  })
+})
+
 app.get('/about', (req, res) => {
     res.render('about', {
         nombre: 'Daniel',
